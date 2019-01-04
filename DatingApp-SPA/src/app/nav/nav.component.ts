@@ -12,7 +12,7 @@ export class NavComponent implements OnInit {
 
   model: any = {};
 
-  constructor(public authService: AuthService, private alertifyService: AlertifyService, 
+  constructor(public authService: AuthService, private alertifyService: AlertifyService,
     private router: Router) { }
 
   ngOnInit() {
@@ -25,7 +25,7 @@ export class NavComponent implements OnInit {
       this.alertifyService.error(error);
     },
     () => {
-      this.router.navigate(['/messages']);
+      this.router.navigate(['/members']);
     });
   }
 
